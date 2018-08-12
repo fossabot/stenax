@@ -1,0 +1,48 @@
+@import '../../global/variables';
+.sx-button {
+  transition: all 0.2s ease;
+  padding: 10px;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  box-sizing: border-box;
+  background: transparent;
+  &:hover {
+    transform: translateY(1px);
+    box-shadow: $button-shadow-hover;
+  }
+}
+
+.sx-button-primary {
+  background: $color-primary;
+  color: $color-white;
+}
+
+.sx-button-success {
+  color: $color-white;
+  background: $color-success;
+}
+
+.sx-button-warning {
+  color: $color-white;
+  background: $color-warning;
+}
+
+.sx-button-danger {
+  color: $color-white;
+  background: $color-danger;
+}
+
+.sx-button-dark {
+  color: $color-white;
+  background: $color-dark;
+}
+
+.sx-button-disabled {
+  opacity: .5;
+  cursor: default;
+  pointer-events: none;
+}
