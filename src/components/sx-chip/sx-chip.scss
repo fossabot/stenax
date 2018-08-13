@@ -1,0 +1,45 @@
+@import '../../global/variables';
+
+.sx-chip {
+  background: #f0f0f0;
+  border-radius: 20px;
+  float: left;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  justify-content: center;
+  margin-right: 2px;
+  margin-bottom: 3px;
+  min-height: 28px;
+  padding-right: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  .sx-chip-content {
+    padding: 10px;
+  }
+}
+
+.sx-chip-primary {
+  background: $color-primary;
+  color: $color-white;
+}
+
+.sx-chip-success {
+  color: $color-white;
+  background: $color-success;
+}
+
+.sx-chip-warning {
+  color: $color-white;
+  background: $color-warning;
+}
+
+.sx-chip-danger {
+  color: $color-white;
+  background: $color-danger;
+}
+
+.sx-chip-dark {
+  color: $color-white;
+  background: $color-dark;
+}

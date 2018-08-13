@@ -65,6 +65,72 @@ declare global {
   }
 }
 
+
+declare global {
+
+  namespace StencilComponents {
+    interface SxChip {
+      'color': string;
+    }
+  }
+
+  interface HTMLSxChipElement extends StencilComponents.SxChip, HTMLStencilElement {}
+
+  var HTMLSxChipElement: {
+    prototype: HTMLSxChipElement;
+    new (): HTMLSxChipElement;
+  };
+  interface HTMLElementTagNameMap {
+    'sx-chip': HTMLSxChipElement;
+  }
+  interface ElementTagNameMap {
+    'sx-chip': HTMLSxChipElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'sx-chip': JSXElements.SxChipAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface SxChipAttributes extends HTMLAttributes {
+      'color'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface SxDivider {
+
+    }
+  }
+
+  interface HTMLSxDividerElement extends StencilComponents.SxDivider, HTMLStencilElement {}
+
+  var HTMLSxDividerElement: {
+    prototype: HTMLSxDividerElement;
+    new (): HTMLSxDividerElement;
+  };
+  interface HTMLElementTagNameMap {
+    'sx-divider': HTMLSxDividerElement;
+  }
+  interface ElementTagNameMap {
+    'sx-divider': HTMLSxDividerElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'sx-divider': JSXElements.SxDividerAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface SxDividerAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }
 
 export declare function defineCustomElements(window: any): void;

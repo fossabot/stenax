@@ -1,7 +1,7 @@
 import { TestWindow } from '@stencil/core/dist/testing';
 import { SXButton } from './sx-button';
 
-describe('my-component', () => {
+describe('sx-button', () => {
   it('should build', () => {
     expect(new SXButton()).toBeTruthy();
   });

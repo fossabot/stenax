@@ -1,7 +1,7 @@
 {
   "name": "stenax",
   "version": "0.0.1",
-  "description": "stenax UI Kit",
+  "description": "Stenax UI Kit",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -25,7 +25,7 @@
     "type": "git",
     "url": "git+https://github.com/rjoydip/stenax.git"
   },
-  "author": "Ionic Team",
+  "author": "Joydip roy (rjoydip) <joydipand@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rjoydip/stenax"
