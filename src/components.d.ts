@@ -71,6 +71,7 @@ declare global {
   namespace StencilComponents {
     interface SxChip {
       'color': string;
+      'text': string;
     }
   }
 
@@ -94,6 +95,7 @@ declare global {
   namespace JSXElements {
     export interface SxChipAttributes extends HTMLAttributes {
       'color'?: string;
+      'text'?: string;
     }
   }
 }
