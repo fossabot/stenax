@@ -13,7 +13,9 @@
     "start": "stencil build --dev --watch --serve",
     "build": "node scripts/build",
     "test": "jest",
-    "test.watch": "jest --watch"
+    "test.watch": "jest --watch",
+    "precommit": "npm test",
+    "prepush": "npm run build"
   },
   "dependencies": {},
   "devDependencies": {
@@ -24,13 +26,18 @@
     "jest": "^23.4.2",
     "p-all": "^1.0.0",
     "shelljs": "^0.8.2",
-    "uglify-js": "^3.4.7"
+    "uglify-js": "^3.4.7",
+    "husky": "^1.0.0-rc.13"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rjoydip/stenax.git"
   },
-  "author": "Joydip roy (rjoydip) <joydipand@gmail.com>",
+  "author": {
+    "name": "Joydip roy <rjoydip>",
+    "email": "joydipand@gmail.com",
+    "url": "https://github.com/rjoydip"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rjoydip/stenax"
@@ -48,5 +55,12 @@
       "json",
       "jsx"
     ]
+  },
+  "readme": "ERROR: No README data found!",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit",
+      "pre-push": "npm run prepush"
+    }
   }
 }
