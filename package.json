@@ -1,6 +1,6 @@
 {
   "name": "stenax",
-  "version": "0.0.2",
+  "version": "0.0.1-beta",
   "description": "Stenax UI Kit",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
